@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    animation: all ease 1.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --principal: #202020;
+    --secudaria: #2B2D42;
+    --terceira: #EDF2F4;
+    --quarta: #242524;
+    --forte: #FFD100;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+body{
+    background-color: var(--quarta);
+}
+section{
+    width: 1280px;
+    margin: auto;
+}
+/* HEADER */
+.topheader{
+    height: 75px;
+    background-color: var(--principal);
+    width: 100%;
+    border-bottom: 0.5px solid var(--terceira);
+}
+.section_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.top_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.logo a{
+    color: var(--terceira);
+    font-family: "Courier";
+}
+.header_link{
+    margin-left: 10px;
+    font-size: 15px;
+    color: var(--terceira);
+    font-weight: 600;
+}
+.header_link:hover{
+    color: var(--forte);
+    transition: all ease 0.5s;
+}
+/* CAPA */
+.capa_back{
+    background-color: var(--principal);
+    border-bottom: 4px solid var(--principal);
+}
+.capa{
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.foto_perfil{
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    border: 2px solid var(--terceira);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.foto_perfil:hover{
+    border: 2px solid #FFD100;
+    transition: all ease 0.8s;
+}
+.capa_title{
+    font-family: "Courier";
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px 0px 2px 0px;
+}
+.capa_subtitle{
+    color: #fff;
+    font-size: 20px;
+}
+/* PARTS */
+.part{
+    padding: 80px 0px 80px 0px;
+}
+.part_title{
+    color: var(--terceira);
+    font-size: 35px;
+    padding: 10px 0px 15px 0px;
+}
+.part_text{
+    color: var(--terceira);
+}
+.part_line{
+    width: 100px;
+    border-bottom: 5px solid var(--forte);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* DARK */
+.dark{
+    background-color: var(--principal);
+}
+.dark .part_title{
+    color: #fff;
+    font-size: 35px;
+    padding: 10px 0px 15px 0px;
+}
+.dark .part_line{
+    width: 100px;
+    border-bottom: 5px solid var(--forte);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.dark .part_text{
+    color: #fff;
+}
+/* PROJETOS */
+.projetos{
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projeto{
+    width: 240px;
+    height: 330px;
+    border: 3px solid var(--terceira);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: var(--principal);
+}
+.projeto_img img{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+.projeto_title{
+    padding: 0px 5px 2px 5px;
+    font-size: 20px;
+}
+.projeto_subtitle{
+    padding: 0px 5px 2px 5px;
+    font-size: 15px; 
+}
+.projeto:hover{
+    transition: all ease 0.8s;
+    /* transform: scale(1.1); */
+    border: 3px solid var(--forte);
+}
+/* HABILIDADES */
+.habilidades{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.habilidade{
+    margin: 5px;
+    border-radius: 50px;
+}
+.habilidade img{
+    border-radius: 50px;
+    border: 3px solid #ffffff;
+}
+.habilidade img:hover, .social:hover{
+    border: 3px solid #FFD100 !important;
+    transition: all ease 0.8s;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--principal);   
+} 
+body::-webkit-scrollbar-thumb {   
+background-color: var(--forte);
+border-radius: 10px;   
+}
+body::-webkit-scrollbar-button{
+    background-color: var(--principal); 
+    color:#fff;
+}
+/* PROJETOS IMAGEM */
+.imagem_projeto{
+    width: 100%;
+    height: auto;
+}
+.imagem_projeto img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--terceira);
+}

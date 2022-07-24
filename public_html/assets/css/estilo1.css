@@ -1,0 +1,16 @@
+.flash{
+    background-color: white;
+    border: 2px solid green;
+    padding: 8px;
+    text-align: center;
+}
+fieldset{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff !important;
+    min-width: 800px !important;
+    justify-content: center;
+    align-items: center;
+}
